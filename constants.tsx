@@ -88,28 +88,28 @@ export const TEAM: TeamMember[] = [
   {
     name: 'Lingesh MV',
     role: 'Team Lead & Connect',
-    image: 'https://img.sanishtech.com/u/712c170051b1bdfe257480e92e615365.jpeg',
+    image: 'https://image2url.com/r2/bucket2/images/1766843517992-85753fb1-3a97-4976-86c8-e1bef1767be3.jpeg',
     linkedin: 'https://www.linkedin.com/in/lingesh-m-a527272b1',
     github: 'https://github.com/lingesh-cdkey'
   },
   {
     name: 'Meiyappan KMA',
     role: 'Lead Developer',
-    image: 'https://img.sanishtech.com/u/f27f262fc29afef7dfabfd912d0f3319.jpeg',
+    image: 'https://image2url.com/r2/bucket2/images/1766843564003-bc479830-b132-4877-b42a-375c2929d25c.jpeg',
     linkedin: 'https://www.linkedin.com/in/menu-57a9a5298/',
     github: 'https://github.com/Meiyappan2006'
   },
   {
     name: 'Adithiyaa JP',
     role: 'Senior Developer',
-    image: 'https://img.sanishtech.com/u/cd62f9859bddee61a77dcc287383fd02.jpeg',
+    image: 'https://image2url.com/r2/bucket2/images/1766843610932-d2e444d9-7c51-46a3-8206-1cbb656fd81d.jpeg',
     linkedin: 'https://www.linkedin.com/in/adithiyaa-jp-a51953303/',
     github: 'https://github.com/harsha-d-kyousuke'
   },
   {
     name: 'Subhash R',
     role: 'Devops Engineer',
-    image: 'https://img.sanishtech.com/u/b192ecd97861af5750a833dce536084e.jpeg',
+    image: 'https://image2url.com/r2/bucket2/images/1766843442568-c29fe727-4be0-4244-b65a-aab1ed04134e.jpeg',
     linkedin: 'https://www.linkedin.com/in/subhash-r-b21137393/',
     github: 'https://github.com/Subhash-777'
   }
