@@ -11,11 +11,27 @@ const Portfolio: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-end justify-between mb-20 gap-8">
           <div className="max-w-xl">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-6">Masterpieces</h2>
-            <p className="text-slate-500 text-lg">
-              A curated selection of our most impactful deployments across AI, SaaS, and Digital Identity.
-            </p>
-          </div>
+  <h2
+    className="
+      font-black
+      tracking-tight
+      leading-tight
+      text-2xl
+      xs:text-3xl
+      sm:text-4xl
+      lg:text-5xl
+      xl:text-6xl
+      mb-6
+    "
+  >
+    Masterpieces
+  </h2>
+
+  <p className="text-slate-500 text-base sm:text-lg">
+    A curated selection of our most impactful deployments across AI, SaaS, and Digital Identity.
+  </p>
+</div>
+
           <button className="px-8 py-4 bg-teal-500 hover:bg-teal-600 text-white font-bold rounded-2xl shadow-lg transition-all flex items-center gap-2">
             View Case Studies <Plus size={20} />
           </button>
