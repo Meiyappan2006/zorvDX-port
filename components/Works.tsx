@@ -9,15 +9,37 @@ const Works: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-end justify-between mb-24 gap-12">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <span className="text-yellow-400 font-black uppercase tracking-[0.5em] text-xs mb-6 block">Our Matrix</span>
-            <h2 className="text-7xl font-black font-heading tracking-tighter uppercase leading-none text-white">
-              MASTER<span className="text-yellow-400 italic">PIECES</span>
-            </h2>
-          </motion.div>
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+>
+  <span className="
+    text-yellow-400
+    font-black
+    uppercase
+    tracking-[0.35em]
+    text-[10px]
+    sm:text-xs
+    mb-4
+    block
+  ">
+    Our Matrix
+  </span>
+
+  <h2 className="
+    font-black
+    font-heading
+    uppercase
+    leading-[0.95]
+    tracking-tighter
+    text-[clamp(2.2rem,9vw,4.5rem)]
+    text-white
+  ">
+    MASTER
+    <span className="text-yellow-400 italic">PIECES</span>
+  </h2>
+</motion.div>
+
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
