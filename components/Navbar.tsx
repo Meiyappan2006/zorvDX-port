@@ -49,10 +49,9 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
     <nav className={`fixed top-0 w-full z-[100] transition-all duration-500 ${
       scrolled 
       ? (isDarkMode ? 'bg-zinc-950/90' : 'bg-white/90') + ' backdrop-blur-xl border-b border-zinc-900 shadow-2xl' 
-      : 'py-4 md:py-8 bg-transparent'
+      : 'py-8 bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        {/* LOGO */}
         <motion.a 
           href="#"
           onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
@@ -60,13 +59,12 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
           animate={{ opacity: 1, x: 0 }}
           className="flex items-center gap-3 group"
         >
-          <Logo className="w-10 h-10 md:w-12 md:h-12" />
-          <span className={`font-black text-xl md:text-2xl tracking-tighter ${isDarkMode ? 'text-white' : 'text-zinc-900'}`}>
+          <Logo className="w-12 h-12" />
+          <span className={`font-black text-2xl tracking-tighter ${isDarkMode ? 'text-white' : 'text-zinc-900'}`}>
             zorv<span className="text-yellow-400 italic">DX</span>
           </span>
         </motion.a>
 
-        {/* DESKTOP MENU */}
         <div className="hidden lg:flex items-center gap-12">
           <ul className="flex gap-10">
             {navLinks.map((link) => (
@@ -99,7 +97,6 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
           </div>
         </div>
 
-        {/* MOBILE TOGGLES */}
         <div className="lg:hidden flex items-center gap-4">
           <button 
             onClick={toggleTheme}
@@ -113,30 +110,28 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
         </div>
       </div>
 
-      {/* MOBILE MENU DROPDOWN */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
+            initial={{ opacity: 0, height: 0, y: -20 }}
+            animate={{ opacity: 1, height: 'auto', y: 0 }}
+            exit={{ opacity: 0, height: 0, y: -20 }}
             className={`lg:hidden ${isDarkMode ? 'bg-zinc-950' : 'bg-white'} border-b border-zinc-900 overflow-hidden`}
           >
-            <ul className="p-6 md:p-8 space-y-6 md:space-y-8">
+            <ul className="p-8 space-y-8">
               {navLinks.map((link) => (
                 <li key={link.name}>
                   <a 
                     href={link.href} 
                     onClick={(e) => handleLinkClick(e, link.href)} 
-                    // FIXED: Reduced text size for mobile (text-3xl)
-                    className={`text-3xl md:text-5xl font-black ${isDarkMode ? 'text-white' : 'text-zinc-900'} block hover:text-yellow-400 transition-colors tracking-tighter`}
+                    className={`text-5xl font-black ${isDarkMode ? 'text-white' : 'text-zinc-900'} block hover:text-yellow-400 transition-colors tracking-tighter`}
                   >
                     {link.name}
                   </a>
                 </li>
               ))}
               <li className="pt-8 border-t border-zinc-900">
-                <a href="tel:7418825507" className="w-full py-4 md:py-6 bg-yellow-400 text-black font-black rounded-3xl flex items-center justify-center gap-3 text-lg shadow-2xl shadow-yellow-400/20">
+                <a href="tel:7418825507" className="w-full py-6 bg-yellow-400 text-black font-black rounded-3xl flex items-center justify-center gap-3 text-lg shadow-2xl shadow-yellow-400/20">
                   DIAL OPERATOR <Phone size={24} />
                 </a>
               </li>
