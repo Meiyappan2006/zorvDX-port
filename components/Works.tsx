@@ -13,32 +13,37 @@ const Works: React.FC = () => {
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true }}
 >
-  <span className="
-    text-yellow-400
-    font-black
-    uppercase
-    tracking-[0.35em]
-    text-[10px]
-    sm:text-xs
-    mb-4
-    block
-  ">
+  <span
+    className="
+      text-yellow-400
+      font-black
+      uppercase
+      tracking-[0.28em]
+      text-[9px]
+      sm:text-[10px]
+      mb-3
+      block
+    "
+  >
     Our Matrix
   </span>
 
-  <h2 className="
-    font-black
-    font-heading
-    uppercase
-    leading-[0.95]
-    tracking-tighter
-    text-[clamp(2.2rem,9vw,4.5rem)]
-    text-white
-  ">
+  <h2
+    className="
+      font-black
+      font-heading
+      uppercase
+      tracking-tight
+      leading-[1]
+      text-white
+      text-[clamp(2rem,10vw,5rem)]
+    "
+  >
     MASTER
     <span className="text-yellow-400 italic">PIECES</span>
   </h2>
 </motion.div>
+
 
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
